@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Food Order Bill</title></head>
+    <body>
+        <h1>Food Order Bill</h1>
+        <input type="number" id="price" placeholder="Enter the item price">
+        <button onclick="addItems()">Add Item</button>
+        <button onclick="calculateItems(...item)">Calculate Item</button>
+        <h2 id="items">Enter Items Prices : </h2>
+        <h2 id="total">Total : $0 </h2>
+        <script>
+            let item=[];
+            function addItems(){
+                let prices=Number(document.getElementById("price").value);
+                item.push(prices);
+                document.getElementById("items").innerText="Enter Item Prices: " + item.join(",");
+            }
+            function calculateItems(...price){
+                let total=0;
+                price.forEach(function(val){
+                    total+=val;
+                });
+                document.getElementById("total").innerText ="Total: $" + total;
+            }
+        </script>
+    </body>
+</html>
