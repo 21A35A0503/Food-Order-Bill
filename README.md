@@ -46,7 +46,7 @@ The application allows users to enter food item prices, view the list of added i
 
 ```bash
 Food-Order-Bill/
-├── index.html
+├── Food Order Bill.html
 └── README.md
 ```
 
@@ -68,7 +68,7 @@ cd Food-Order-Bill
 
 ### 3. Run the Project
 
-Open the `index.html` file in your preferred web browser.
+Open the `Food Order Bill.html` file in your preferred web browser.
 
 No additional setup or installation is required.
 
